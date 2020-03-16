@@ -2,6 +2,34 @@ body {
   background-color: lightblue;
 }
 
-h1 {
+h1  {
+  color: white;
+  font-family: Arial;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+
+
+h1 :cod {
+    color: white;
+    font-family: Arial;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+h2 {
+  color: white;
+  padding-left: 100px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-left: 100px;
+  position: relative;
+}
+
+hr {
   color: white;
 }

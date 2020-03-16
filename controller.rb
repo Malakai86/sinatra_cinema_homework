@@ -5,6 +5,10 @@ require('pry-byebug')
 require_relative('./models/cinema.rb')
 also_reload('./models/*')
 
-get '/home' do
+get '/films**' do
   erb(:home)
+end
+
+get '/codfather' do
+  erb(:codfather)
 end
