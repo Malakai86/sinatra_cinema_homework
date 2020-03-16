@@ -2,13 +2,11 @@ require('sinatra')
 require('sinatra/contrib/all')
 require('pry-byebug')
 
-require_relative('./models/cinema.rb')
+require_relative('./models/film.rb')
 also_reload('./models/*')
 
 get '/films**' do
-  erb(:home)
-end
-
-get '/codfather' do
-  erb(:codfather)
+  @film = Film.all()
+  @title = @film.map{|film|film.title}
+  erb(:index)
 end

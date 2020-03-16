@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <ul>
+    <li>
+      <div class="list">
+
+      <% @film.map do |film| %>
+        <% name = film.title %>
+        <%= p name %>
+        <br>
+        <hr>
+        <% end %>
+      </div>
+
+    </li>
+  </ul>
+  </body>
+</html>
